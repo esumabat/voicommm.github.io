@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=”utf-8″>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="sectionstyle.css">
+    <link rel="icon" type="image/x-icon" href="voicommicon.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>VoiComm</title>
+</head>
+<body>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            width: 80%;
+            margin-top: 70px;
+        }
+
+        .information {
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            width: 10000%;
+        }
+
+        .information h1 {
+            margin-bottom: 5px;
+            background-color: #8789ff;
+            border-radius: 10px;
+            margin-right: 70%;
+            height: 50;
+        }
+
+        .information p {
+            text-align: justify;
+        }
+
+        .disclaimer {
+            background-color: #8789ff;
+            border: 1px solid #rgb(0, 0, 0);
+            border-radius: 50px;
+            padding: 10px;
+            margin: 10px;
+            width: 100000px;
+            margin-top: 200px;
+        }
+
+        .disclaimer h2 {
+            font-size: 15px;
+            margin-bottom: 5px;
+            background-color: #8789ff;
+            border-radius: 10px;
+            margin-right: 70%;
+            height: 50;
+        }
+
+        .disclaimer p {
+            font-size: 12px;
+            text-align: justify;
+            text-align: italic;
+        }
+    </style>
+    <div class="sidebar">
+        <div class="top">
+            <div class="user">
+                <img src="voicommicon.png" alt="me" class="user-img">
+                <span>Voi Comm</span>
+            </div>
+                <i class="bx bx-menu" id="btn"></i>
+            <ul>
+                <li>
+                    <a href="sections.html">
+                        <i class='bx bxs-home'></i>
+                        <span class="nav-item">Home</span>
+                    </a>
+                        <span class="tooltip">Home</span>
+                </li>
+                <li>
+                    <a href="commspace.html">
+                        <i class='bx bxs-chat'></i>
+                        <span class="nav-item">CommSpace</span>
+                    </a>
+                        <span class="tooltip">CommSpace</span>
+                </li>
+                <li>
+                    <a href="lectures.html">
+                        <i class='bx bxs-book-bookmark' ></i>
+                        <span class="nav-item">Lectures</span>
+                    </a>
+                        <span class="tooltip">Lectures</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-user-pin' id="profile-btn"></i>
+                        <span class="nav-item">Profile</span>
+                    </a>
+                        <span class="tooltip">Profile</span>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <i class='bx bxs-door-open'></i>
+                        <span class="nav-item">Logout</span>
+                    </a>
+                        <span class="tooltip">Logout</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="information">
+            <h1><img src="voicommicon.png" alt="me" class="user-img">>VoiComm </h1><br>
+            <p> >>The main purpose of this application is to help individuals, whatever their condition and circumstances, communicate well with other people. By providing individuals with the tools and resources they need to communicate more effectively, this application can help them break down barriers, connect with others on a deeper level, and live happier and more fulfilling lives. Whether you're a shy introvert looking to improve your social skills or someone with a disability, this application can help you communicate confidently and effectively in any situation.</p>
+            <p>It's also a tool for improving the quality of life by allowing diverse communities to interact and build connections. This will also help individuals in improving their communication and social skills, as well as their ability to interact with others.</p>
+        </div>
+        <div class="disclaimer">
+            <h2>>>Disclaimer</h2>
+            <p>Our web application is currently undergoing continuous development and enhancements. It is still in its alpha stages expect incomplete features and bugs. We apologize for any inconveniences caused by our current time constraints. We are working to provide you with the best possible experience. Thank you for your patience as we work to improve it further. Thank you for your consideration and understanding. :></p>
+        </div>
+    </div>
+</body>
+<script>
+    let btn = document.querySelector('#btn')
+    let sidebar = document.querySelector('.sidebar')
+    btn.onclick = function () {
+        sidebar.classList.toggle('active');
+    }
+    let profile = document.querySelector('.header .fles .profile');
+    document.querySelector('#user-btn').onclick = () =>{
+        profile.classList.toggle('active');
+    }
+    window.onscroll = () =>{
+        profile.classList.remove('active')
+    }
+</script>
+</html>

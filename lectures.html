@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=”utf-8″>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="sectionstyle.css">
+    <link rel="icon" type="image/x-icon" href="voicommicon.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Lectures</title>
+</head>
+<style>
+.container {
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-left: 300px;
+    cursor: pointer;
+    transition: transform 0.3s ease os;
+}
+
+@media (min-width: 1200px){}
+    .container {
+    max-width: 1000px;
+}
+
+.lesson1 {
+    background-color:  #02000cd8;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 15px;
+    width: 40%;
+    cursor: pointer;
+}
+
+.lesson2 {
+    background-color:  #02000cd8;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 15px;
+    width: 45%;
+    cursor: pointer;
+}
+
+.lesson3 {
+    background-color:  #02000cd8;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 15px;
+    width: 45%;
+    cursor: pointer;
+}
+
+.lesson4 {
+    background-color:  #02000cd8;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 15px;
+    width: 90%;
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 5px;
+    color: aliceblue;
+    background-color: #8789ff;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+p{
+    font-size: 9px;
+    text-align: left;
+    color: rgb(252, 252, 252);
+}
+.sign-img {
+    width:170px;
+    border-radius: 10px;
+    align-content: center;
+}
+
+</style>
+	<body>
+        <body>
+            <div class="sidebar">
+                <div class="top">
+                    <div class="user">
+                        <img src="voicommicon.png" alt="me" class="user-img">
+                        <span>Voi Comm</span>
+                    </div>
+                        <i class="bx bx-menu" id="btn"></i>
+                    <ul>
+                        <li>
+                            <a href="sections.html">
+                                <i class='bx bxs-home'></i>
+                                <span class="nav-item">Home</span>
+                            </a>
+                                <span class="tooltip">Home</span>
+                        </li>
+                        <li>
+                            <a href="commspace.html">
+                                <i class='bx bxs-chat'></i>
+                                <span class="nav-item">CommSpace</span>
+                            </a>
+                                <span class="tooltip">CommSpace</span>
+                        </li>
+                        <li>
+                            <a href="lectures.html">
+                                <i class='bx bxs-book-bookmark' ></i>
+                                <span class="nav-item">Lectures</span>
+                            </a>
+                                <span class="tooltip">Lectures</span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class='bx bxs-user-pin' id="profile-btn"></i>
+                                <span class="nav-item">Profile</span>
+                            </a>
+                                <span class="tooltip">Profile</span>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <i class='bx bxs-door-open'></i>
+                                <span class="nav-item">Logout</span>
+                            </a>
+                                <span class="tooltip">Logout</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+                <div class="container">
+                    <div class="lesson1">
+                        <h2>LESSON 1: SIGN LANGUAGE</h2>
+                        <p>> Standard Sign Language, often referred to as a complete natural language, utilizes hand shapes, facial expressions, and body movements to convey meaning. It is used primarily by deaf and hard-of-hearing individuals but can also be learned and used by hearing individuals.</p>
+                        <img src="sign.jpg" alt="" class="sign-img">
+                    </div>
+                    <div class="lesson2">
+                        <h2>LESSON 2: BRAILLE ALPHABET</h2>
+                        <p>> Braille is a tactile writing system used by people who are visually impaired. It can be read either on embossed paper or by using refreshable braille displays that connect to computers and smartphone devices. Braille can be written using a slate and stylus, a braille writer, or with the use of a computer connected to a braille embosser.</p>
+                        <img src="braille.jpg" alt="" class="sign-img">
+                    </div>
+                    <div class="lesson3">
+                        <h2>LESSON 3: HOW TO START A CONVERSATION</h2>
+                        <p>> Here are some examples on how to communicate to the people around you respectfully and politely: <br>1. Active Listening: Pay attention to what other people saying without interrupting. Show understanding by reflecting on their emotions.
+                            2. Be Clear and Concise: Communicate your ideas clearly and concise. This helps prevent misunderstandings.
+                            3. Be Considerate: Choose your words carefully to avoid causing hurt feelings. Be professional in sensitive situations.</p>
+                        <img src="communicate.png" alt="" class="sign-img">
+                        </div>
+                    <div class="lesson4">
+                        <h2>LESSON 4: HOW TO OVERCOME SOCIAL ANXIETY</h2>
+                        <p>> Overcoming social anxiety and improving social skills takes time and effort. Gradual exposure, challenging negative thoughts, practicing relaxation techniques, setting realistic goals, joining social groups and focusing on positive strengths are some ways to achieve it. Self-care and self-compassion are also essential.</p>
+                        <img src="social.png" alt="" class="sign-img">
+                    </div>
+                </div>
+</body>
+<script>
+    let btn = document.querySelector('#btn')
+    let sidebar = document.querySelector('.sidebar')
+    btn.onclick = function () {
+        sidebar.classList.toggle('active');
+    }
+    let profile = document.querySelector('.header .fles .profile');
+    document.querySelector('#user-btn').onclick = () =>{
+        profile.classList.toggle('active');
+    }
+    window.onscroll = () =>{
+        profile.classList.remove('active')
+    }
+</script>
+</body>
+</html>

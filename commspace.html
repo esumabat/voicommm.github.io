@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Chat</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" >
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+		<link rel="stylesheet" href="commspace.css">
+        <link rel="stylesheet" href="sectionstyle.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	</head>
+	<body>
+        <body>
+            <div class="sidebar">
+                <div class="top">
+                    <div class="user">
+                        <img src="voicommicon.png" alt="me" class="user-img">
+                        <span>Voi Comm</span>
+                    </div>
+                        <i class="bx bx-menu" id="btn"></i>
+                    <ul>
+                        <li>
+                            <a href="sections.html">
+                                <i class='bx bxs-home'></i>
+                                <span class="nav-item">Home</span>
+                            </a>
+                                <span class="tooltip">Home</span>
+                        </li>
+                        <li>
+                            <a href="commspace.html">
+                                <i class='bx bxs-chat'></i>
+                                <span class="nav-item">CommSpace</span>
+                            </a>
+                                <span class="tooltip">CommSpace</span>
+                        </li>
+                        <li>
+                            <a href="lectures.html">
+                                <i class='bx bxs-book-bookmark' ></i>
+                                <span class="nav-item">Lectures</span>
+                            </a>
+                                <span class="tooltip">Lectures</span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class='bx bxs-user-pin' id="profile-btn"></i>
+                                <span class="nav-item">Profile</span>
+                            </a>
+                                <span class="tooltip">Profile</span>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <i class='bx bxs-door-open'></i>
+                                <span class="nav-item">Logout</span>
+                            </a>
+                                <span class="tooltip">Logout</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+		<div class="container-fluid h-100" id="box1">
+			<div class="row justify-content-center h-100">
+				<div class="col-md-4 col-xl-3 chat"><div class="card mb-sm-3 mb-md-0 contacts_card">
+					<div class="card-header">
+						<div class="input-group">
+							<input type="text" placeholder="Search..." name="" class="form-control search">
+							<div class="input-group-prepend">
+								<span class="input-group-text search_btn"><i class="fas fa-search"></i></span>
+							</div>
+						</div>
+					</div>
+					<div class="card-body contacts_body">
+						<ui class="contacts">
+						<li class="active">
+							<div class="d-flex bd-highlight">
+								<div class="img_cont">
+									<img src="userprofile.png" class="rounded-circle user_img">
+									<span class="online_icon"></span>
+								</div>
+								<div class="user_info">
+									<span>Mother</span>
+									<p>Online</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="d-flex bd-highlight">
+								<div class="img_cont">
+									<img src="userprofile.png" class="rounded-circle user_img">
+									<span class="online_icon offline"></span>
+								</div>
+								<div class="user_info">
+									<span>Father</span>
+									<p>Left 12 mins ago</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="d-flex bd-highlight">
+								<div class="img_cont">
+									<img src="userprofile.png" class="rounded-circle user_img">
+									<span class="online_icon"></span>
+								</div>
+								<div class="user_info">
+									<span>Friend</span>
+									<p>Online</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="d-flex bd-highlight">
+								<div class="img_cont">
+									<img src="userprofile.png" class="rounded-circle user_img">
+									<span class="online_icon"></span>
+								</div>
+								<div class="user_info">
+									<span>Cousin</span>
+									<p>Online</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="d-flex bd-highlight">
+								<div class="img_cont">
+									<img src="userprofile.png" class="rounded-circle user_img">
+									<span class="online_icon offline"></span>
+								</div>
+								<div class="user_info">
+									<span>Sister</span>
+									<p>Left 10 mins ago</p>
+								</div>
+							</div>
+						</li>
+						</ui>
+					</div>
+					<div class="card-footer"></div>
+				</div></div>
+				<div class="col-md-8 col-xl-6 chat">
+					<div class="card">
+						<div class="card-header msg_head">
+							<div class="d-flex bd-highlight">
+								<div class="img_cont">
+									<img src="userprofile.png" class="rounded-circle user_img">
+									<span class="online_icon"></span>
+								</div>
+								<div class="user_info">
+									<span>Mother</span>
+									<p>2934 Messages</p>
+								</div>
+							</div>
+							<span id="action_menu_btn"><i class="fas fa-ellipsis-v"></i></span>
+						</div>
+						<div class="card-body msg_card_body">
+							<div class="d-flex justify-content-start mb-4">
+								<div class="img_cont_msg">
+									<img src="userprofile.png" class="rounded-circle user_img_msg">
+								</div>
+								<div class="msg_cotainer">
+									'musta na
+									<span class="msg_time">12:40 PM, Today</span>
+								</div>
+							</div>
+							<div class="d-flex justify-content-end mb-4">
+								<div class="msg_cotainer_send">
+									maaaa, nakakaiyak 'yung comprog, hindi ko pa tapos huhu
+									<span class="msg_time_send">11:45 PM, Today</span>
+								</div>
+								<div class="img_cont_msg">
+							<img src="userprofile.png" class="rounded-circle user_img_msg">
+								</div>
+							</div>
+							<div class="d-flex justify-content-start mb-4">
+								<div class="img_cont_msg">
+									<img src="userprofile.png" class="rounded-circle user_img_msg">
+								</div>
+								<div class="msg_cotainer">
+									awit yan
+									<span class="msg_time">11:50 PM, Today</span>
+								</div>
+							</div>
+							<div class="d-flex justify-content-end mb-4">
+								<div class="msg_cotainer_send">
+									pagod na aku :<
+									<span class="msg_time_send">11:52 PM, Today</span>
+								</div>
+								<div class="img_cont_msg">
+							<img src="userprofile.png" class="rounded-circle user_img_msg">
+								</div>
+							</div>
+							<div class="d-flex justify-content-start mb-4">
+								<div class="img_cont_msg">
+									<img src="userprofile.png" class="rounded-circle user_img_msg">
+								</div>
+								<div class="msg_cotainer">
+									pahinga ka na
+									<span class="msg_time">11:53 PM, Today</span>
+								</div>
+							</div>
+						</div>
+						<div class="card-footer">
+							<div class="input-group">
+								<div class="input-group-append">
+									<span class="input-group-text attach_btn"><i class="fas fa-paperclip"></i></span>
+								</div>
+								<textarea name="" class="form-control type_msg" placeholder="Type your message..."></textarea>
+								<div class="input-group-append">
+									<span class="input-group-text send_btn"><i class="fas fa-location-arrow"></i></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+<script>
+    let btn = document.querySelector('#btn')
+    let sidebar = document.querySelector('.sidebar')
+    btn.onclick = function () {
+        sidebar.classList.toggle('active');
+    }
+    let profile = document.querySelector('.header .fles .profile');
+    document.querySelector('#user-btn').onclick = () =>{
+        profile.classList.toggle('active');
+    }
+    window.onscroll = () =>{
+        profile.classList.remove('active')
+    }
+</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts.js"></script>
+    </$(document).ready(function(){
+        $('#action_menu_btn').click(function(){
+            $('.action_menu').toggle();
+        });
+    });</script>
+	</body>
+</html>

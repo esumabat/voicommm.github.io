@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 100;
+    margin-top: 20px;
+    padding: 100;
+    align-items: center;
+    font-family: "Poppins",sans-serif;}
+
+body {
+    background-image: url("voicommbg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: rgb(255, 255, 255); /* Use an rgba color for background to make it semi-transparent */
+    padding: 20px;
+    box-shadow: 0 0 10px rgb(71, 3, 180);
+    border-radius: 20px;
+    opacity: 1;}
+
+h1 {font-family: "poppins";
+    font-size: 60px;
+    color: #3c3ea5;
+    font-weight: 500;}
+    
+p {font-family: "poppins";
+    color: #2a2c97  ;}
+
+.login-form {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1px;}
+
+.username {
+    align-items: center;
+    border: 1px solid #0f1955;
+    padding: 1px;
+    margin: 3%;
+    width: 60%;
+    border-radius: 15px;
+    color: #696cff;}
+
+.username:after {
+    content: 'username';
+    font-size: 13px;
+    background-color: #fff;
+    position: relative;
+    padding: 0 4%;
+    left: -290px;
+    width: 300px;
+    color: #696cff;
+    top: -29px;}
+
+input {
+    border: none;
+    outline: none;
+    background: inherit;
+    color: #101058;
+    width: 200px;
+    margin-left: 4%;
+    font-size: 16px;
+    align-items: center;
+    border: 1px solid #0f195500;
+    padding: 1px;
+    margin: 3%;
+    width: 60%;
+    border-radius: 15px;
+    color: #696cff;}
+
+.password {
+    display: fixed  ;
+    border: 1px solid #0f1955;
+    padding: 1px;
+    margin: 2%;
+    width: 60%;
+    border-radius: 15px;
+    color: #84848d;}
+
+.password:after {
+    content: 'password';
+    font-size: 13px;
+    background-color: #fff;
+    position: relative;
+    padding: 0 4%;
+    left: -290px;
+    width: 360px;
+    color: #696cff;
+    top: -28px;}
+
+.login, .previousPage {
+    background-color: #8789ff;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    width: 190px;
+    cursor: pointer;
+    padding: 1%;
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 40px;
+    border: none;
+    outline: none;}

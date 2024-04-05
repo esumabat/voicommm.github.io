@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    background-image: url("voicommbg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;}
+
+* {
+    margin: 2px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Meldiva';
+}
+
+.user-img {
+    padding: 3px;
+    width: 60px;
+    border-radius: 100%;
+    border: 1px solid blueviolet;
+}
+
+.sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 80px;
+    background-color: #ffffff;
+    padding: 2px;
+    transition: all 0.5s ease;
+    box-shadow: 5px 10px 5px rgba(21, 4, 95, 0.705);
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;}
+
+.sidebar.active {
+    width: 320px;
+}
+
+.sidebar #btn {
+    position: absolute;
+    color: #8789ff;
+    top: .4rem;
+    left: 50%;
+    font-size: 1.2rem;
+    line-height: 50px;
+    transform: translate(-50%);
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.sidebar.active #btn {
+    left:90%;
+}
+
+.sidebar .user {
+    margin-top: 15px;
+    margin-left: 3px;
+}
+.sidebar .top .user {
+    color: #8789ff;
+    display: flex;
+    height: 50%;
+    width: 100%;
+    align-items: center;
+    pointer-events: none;
+    opacity: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 35px;
+}
+
+.sidebar.active .top .user {
+    opacity: 1;
+}
+
+.top .user i{
+    font-size: 2rem;
+    margin-right: 5px;
+}
+
+.sidebar ul li {
+    position: relative;
+    list-style-type: none;
+    height: 50px;
+    width: 90%;
+    margin: 3rem auto;
+    line-height: 29px;
+}
+
+.sidebar ul li a{
+    color: #8789ff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 0.8rem;
+    left: 50%;
+    font-size: 30px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #8789ff;
+    box-shadow: inset;
+    color: rgb(255, 255, 255);
+}
+
+.sidebar ul li a i {
+    min-width: 50px;
+    text-align: center;
+    height: 50px;
+    border-radius: 50px;
+    line-height: 50px;
+}
+
+.sidebar .nav-item{
+    opacity: 0;
+}
+
+.sidebar.active .nav-item{
+    opacity: 1;
+}
+
+.sidebar ul li .tooltip {
+    position: absolute;
+    left: 125px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0.5rem 0.8rem;
+    border-radius: .6rem;
+    padding: .4rem 1.2rem;
+    line-height: 1.8rem;
+    z-index: 20;
+    opacity: 0;
+}
+
+.sidebar ul li:hover .tooltip {
+    opacity: 1;
+}
+
+.sidebar.active ul li .tooltip{
+    display: none;
+}
+
+.container {
+    display: flex;
+    flex-wrap:nowrap;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.lesson {
+    background-color: #02000cad;
+    border: 1px solid #834949;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 45%;
+}
+
+.lesson h2 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.sign-img {
+    width:300px
+}
